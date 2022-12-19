@@ -1,31 +1,24 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun May 17 18:20:08 2020
-
-@author: Admin
-"""
-
 import math
 
 
 def emW(x, y):
     elecemm1 = x * y
     elecemm2 = x * y / 1000
-    print('Carbon Emissioned:', elecemm1, 'CO2/Wh or', elecemm2, 'CO2/kWh')
+    print('Carbon Emission:', elecemm1, 'CO2/Wh or', elecemm2, 'CO2/kWh')
     print("******************************")
 
 
 def emkW(x, y):
     elecemm1 = x * y * 1000
     elecemm2 = x * y
-    print('Carbon Emissioned:', elecemm2, 'CO2/kWh or', elecemm1, 'CO2/Wh')
+    print('Carbon Emission:', elecemm2, 'CO2/kWh or', elecemm1, 'CO2/Wh')
     print("******************************")
 
 
 def ng(x):
     ef = 117
     ngemm = x * ef
-    print('Carbon Emissioned:', ngemm, 'CO2/mmBtu (CO2 emitted per million British thermal units (Btu))')
+    print('Carbon Emission:', ngemm, 'CO2/mmBtu (CO2 emitted per million British thermal units (Btu))')
     print("******************************")
 
 
@@ -33,7 +26,7 @@ def pet():
     lit = float(input('Please enter the amount of petrol used in Litre: '))
     ef = 2.95
     pem = lit * ef
-    print('Carbon Emissioned:', pem, 'kg CO2-e/unit')
+    print('Carbon Emission:', pem, 'kg CO2-e/unit')
     print("******************************")
 
 
@@ -41,7 +34,7 @@ def die():
     lit = float(input('Please enter the amount of diesel used in Litre: '))
     ef = 161.3
     dem = lit * ef
-    print('Carbon Emissioned:', dem, 'CO2/mmbtu')
+    print('Carbon Emission:', dem, 'CO2/mmbtu')
     print("******************************")
 
 
@@ -49,7 +42,7 @@ def gas():
     lit = float(input('Please enter the amount of Gasoline used in Litre: '))
     ef = 157.2
     gem = lit * ef
-    print('Carbon Emissioned:', gem, 'CO2/mmbtu')
+    print('Carbon Emission:', gem, 'CO2/mmbtu')
     print("******************************")
 
 
@@ -57,7 +50,7 @@ def hyd():
     kg = float(input('Please enter the amount of Hydrogen used in Kilograms: '))
     ef = math.pi / 2
     hem = kg * ef
-    print('Carbon Emissioned:', hem, 'CO2/kg')
+    print('Carbon Emission:', hem, 'CO2/kg')
     print("******************************")
 
 
